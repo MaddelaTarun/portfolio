@@ -13,8 +13,15 @@
       rel="stylesheet"
     />
 
+    <!-- Font Awesome for theme icons -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
   </head>
 
   <body>
@@ -24,22 +31,19 @@
         <div class="nav-links">
           <a href="#home">home</a>
           <a href="#projects">projects</a>
-          <a href="#resume">resume</a>
           <a href="#contact">contact</a>
         </div>
 
-        <!-- Placeholder for theme switcher -->
         <div class="theme-toggle">
           <i class="fa-solid fa-sun"></i>
         </div>
       </nav>
     </div>
 
-    <!-- Main content container -->
+    <!-- Main content -->
     <div class="container">
-      <!-- Home Section -->
       <section id="home">
-        <h1># Home</h1>
+        <h1>Home</h1>
         <h3>Maddela Tarun</h3>
         <ul>
           <li>20 y/o, I like tech (kinda)</li>
@@ -49,67 +53,119 @@
           Student @
           <strong>Gopalan College of Engineering and Management</strong>
         </p>
+        <a
+          href="https://drive.google.com/file/d/1TMe480cITpUZUJFfBok6BxzsLNVMB7Tl/view?usp=sharing"
+          target="_blank"
+          ><strong>My Resume</strong></a
+        >
 
-      <div class="about-sections">
-        <div id="interests">
-          <h2>## Interests</h2>
-          <ul>
-            <li>Web Dev</li>
-            <li>Automation</li>
-            <li>Rust</li>
-            <li>AI/ML Basics</li>
-            <li>Designing</li>
-            <li>Learning new things</li>
-          </ul>
-        </div>
+        <div class="about-sections">
+          <div id="interests">
+            <h2>Interests</h2>
+            <ul>
+              <li>Web Dev</li>
+              <li>Automation</li>
+              <li>Rust</li>
+              <li>AI/ML Basics</li>
+              <li>Designing</li>
+              <li>Learning new things</li>
+            </ul>
+          </div>
 
-        <div id="skills">
-          <h2>## Skills</h2>
-          <ul>
-            <li>Web Development</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>Figma</li>
-            <li>Shell Scripting</li>
-            <li>Communication</li>
-            <li>Git</li>
-            <li>DBMS</li>
-          </ul>
+          <div id="skills">
+            <h2>Skills</h2>
+            <ul>
+              <li>Web Development</li>
+              <li>Java</li>
+              <li>C</li>
+              <li>Figma</li>
+              <li>Shell Scripting</li>
+              <li>Communication</li>
+              <li>Git</li>
+              <li>DBMS</li>
+            </ul>
+          </div>
         </div>
-      </div>  
-        
       </section>
 
-      <!-- Projects Section -->
       <section id="projects">
-        <h2># Projects</h2>
+        <h2>Projects</h2>
         <div class="project">
-          <h3>Project #1: Portfolio Website</h3>
+          <a
+            href="https://github.com/MaddelaTarun/portfolio"
+            target="_blank"
+            ><h3>Project #1: Portfolio Website</h3></a
+          >
           <p>
             A minimal and fast personal portfolio built using HTML, CSS, and
             JavaScript. Responsive and easy to navigate.
           </p>
-          <a href="https://github.com/yourusername/portfolio" target="_blank"
-            >View on GitHub</a
-          >
         </div>
       </section>
 
       <!-- Contact Section -->
       <section id="contact">
-        <h2># Contact</h2>
-        <a href="https://www.linkedin.com/in/maddela-tarun-42527137a/"
-          >LinkedIn</a
+        <h2>Contact</h2>
+
+        <form
+          id="contactForm"
+          action="https://formspree.io/f/xeopperk"
+          method="POST"
         >
-        <a href="mailto:maddelatarun59@gmail.com">Mail</a>
-        <a href="https://github.com/MaddelaTarun">GitHub</a>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="John Doe"
+              required
+            />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="_replyto"
+              placeholder="example@mail.com"
+              required
+            />
+          </div>
+
+          <div class="form-row">
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Your Subject"
+              required
+            />
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Type your message here..."
+              rows="5"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit">Send Message</button>
+          <p id="form-status"></p>
+        </form>
       </section>
 
-      <!-- Footer -->
       <footer id="footer">
-        <p>© 2025 Maddela Tarun | <a href="https://github.com/MaddelaTarun">GitHub</a></p>
+        <p>
+          © 2025 Maddela Tarun
+        </p>
       </footer>
     </div>
-
   </body>
 </html>
